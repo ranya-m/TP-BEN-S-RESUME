@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;  
+    color: gray;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/* This is Ben's resume */
+
+.resume {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    flex-direction: row;   
+    justify-content: space-evenly;
+}
+
+.thisisben-flex-container {
+    width: 40%;
+    margin-top: 10vh;
+    height: 100vh;
+}
+
+.thisisben-flex-container p {
+    padding: 10px 0;
+}
+
+.resume li {
+    list-style: none; 
+}
+
+.resume ul {
+    padding-top: 4vh;
+}
+
+.resume span {
+    font-weight: 100 !important;
+}
+
+
+
+/* Resume photo */
+.resume img {
+    border-radius: 10%;
+    height: 60vh;
+    width: 80vh;
+    margin-top: 15vh;
+}
+
+
+/* 3 lorems */
+
+.lorem-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 75px;
+    margin-left: 75px;
+   
+}
+
+.lorem {
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+
+/* RESPONSIVE (SAMSUNG S20 ULTRA) */
+/* I didn't succeed in aligning items in the center using justify-content and justify items : center ; so I only used margins and paddings */
+
+@media screen and (max-width:480px) {
+    .lorem {
+        width: 100%;  
+        margin:0;
+        /* justify-items: center; */
+        padding-left: 7vh;
+        padding-bottom: 5vh;
+    }
+
+    .resume {
+        flex-direction: column;
+        width: 90%;
+        display: flex;
+        flex-wrap:wrap;
+        /* justify-content: center; */  
+    }
+
+    .resume img {
+        order: 1;
+        width: 80%;    
+        height: 60%;
+        margin-left: 7vh;
+        margin-bottom: 7vh;
+        
+    }
+
+    .thisisben-flex-container {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding-left: 7vh;
+        
+        /* justify-content: center;    */
+    }
+
+    .lorem-flex-container {
+        order: 3;
+        width: 100%;
+        margin: 0;
+        padding-top: 7vh;
+        justify-content: center;
+    }
+}
