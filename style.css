@@ -3,6 +3,7 @@
     padding:0;
     box-sizing:border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -22,26 +23,121 @@ h4 {
     line-height: 2rem;
 }
 
+/* Acceuil : navbar */
+nav {
+    background-color:rgb(5, 5, 41);
+    padding: 1% 2%;
+}
+
+nav h1 { 
+    color: white;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-size: 2.3em;
+}
+
+nav h1, 
+nav ul,
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+   width: 60%;
+   padding-left: 10%;
+
+}
+
+nav li {
+    padding-right: 10%;
+}
+
+nav a {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+nav button {
+    background-color: rgb(247, 213, 22);
+    color:rgb(5, 5, 41);
+    font-size: 1.5em;
+    font-weight:600;
+    padding: 10px 30px;
+    border-radius: 1.5em;
+    
+}
+
+/* Acceuil : Welcome message */
+.message-accueil {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    width: 100%;
+}
+
+.container1 {
+    width: 50%;   
+}
+
+.container2 {
+    width: 50%;
+    padding-top: 50vh;
+    padding-left: 5vh;
+}
+
+.BDN {
+    background-color: rgb(2, 2, 14);
+    color: white;
+    font-size: 2.3em;  
+    padding: 5px 5px 25px 50px;
+    border-radius: 1.5em;
+    width: 80%;
+    
+}
+
+.hi {
+    padding-top: 10px;
+}
+
+.CMAIL {
+    margin-top: 25px;
+    background-color:rgb(247, 213, 22);
+    color: rgb(2, 2, 14);
+    font-size: 2.3em;  
+    padding-left: 30px;
+    padding-top: 15px;
+    border-radius: 1.5em;
+    width: 60%;
+    font-weight: 500;
+}
+
+
+
 /* This is Ben's resume */
 
 .resume {
     
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    
-    flex-direction: row;   
-    justify-content: space-evenly;
+    width: 100%;  
+    justify-content: space-between;
 }
 
 .thisisben-flex-container {
-    width: 40%;
-    margin-top: 10vh;
-    height: 100vh;
+    width: 100%;
+    padding: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .thisisben-flex-container p {
     padding: 10px 0;
+}
+
+.description {
+    width: 50%;
 }
 
 .resume li {
@@ -59,11 +155,15 @@ h4 {
 
 
 /* Resume photo */
-.resume img {
+.portrait {
+    width: 40%;
+    padding-top: 10vh;
+    height: 50%;
+}
+
+.portrait img {
+    width: 100%;
     border-radius: 10%;
-    height: 60vh;
-    width: 80vh;
-    margin-top: 15vh;
 }
 
 
@@ -87,8 +187,181 @@ h4 {
    
 }
 
-/* RESPONSIVE (SAMSUNG S20 ULTRA) */
-/* I didn't succeed in aligning items in the center using justify-content and justify items : center ; so I only used margins and paddings */
+
+    .people {
+        width: 100%;
+        
+    }
+
+    .contact {
+        /* flex-direction: column; */
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .formulaire {
+        width: 90%;
+        order: 1;
+    }
+
+    .c-info {
+        width: 90%;
+        order: 2;
+    }
+}
+
+/* WHAT PEOPLE SAY */
+.whatpeoplesay {
+    background-color: rgba(244, 244, 250, 0.452);
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.whatpeoplesay>h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+.what1 span {
+    text-transform: capitalize;
+}
+
+.what-container {
+    width: 95%;
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: space-evenly;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.people {
+    width: 30%;
+}
+
+.people img {
+    float:left;
+    border-radius: 50%;
+    width: 40%;
+}
+
+.quote {
+    overflow: hidden; 
+    width: 60%;   
+}
+
+.quote p {
+    font-size: 1rem;
+}
+
+/* FAQ */
+.faq-container {
+    border: 1px solid rgb(222, 220, 224);
+    background-color:rgb(241, 241, 241);
+    width: 85%;
+}
+
+.faq-main {
+    margin-left: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+
+.Q,
+.A {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    font-size: 1.5rem;
+    padding-left: 3vh;
+    line-height: 1.5rem;
+}
+
+.A {
+    background-color: white !important;
+}
+
+.faq-info {
+    font-size: smaller;
+    padding-top: 5vh;
+}
+
+/* CONTACT */
+.contact {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: space-evenly;
+    height: 85vh;
+    
+}
+
+.formulaire {
+    width: 45%;
+    height: 70vh;
+    font-size: 4rem;
+}
+
+.c-info {
+    width: 40%;
+    height: 50vh;
+    line-height: 7vh; 
+    padding-top: 10vh;
+    padding-left: 10vh;  
+}
+
+.contact h3 {
+    color: gray;
+    font-weight: lighter;
+    font-size: 3vh;
+}
+
+.socials {
+    padding-bottom: 3vh;
+    font-size: 5vh;
+    color: gray;
+}
+
+.mail-info {
+    color: black !important;
+}
+
+.send-button {
+    background-color: rgb(247, 213, 22);
+    color:rgb(5, 5, 41);
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 1.5em;
+    border: none;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid rgb(210, 208, 211) !important;
+    padding-right: 400px;   
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+#message {
+    padding-bottom: 200px;
+    padding-right: 400px;   
+}
+
+
+
+
+/* RESPONSIVE */
 
 @media screen and (max-width:480px) {
     .lorem {
@@ -101,28 +374,34 @@ h4 {
 
     .resume {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         display: flex;
-        flex-wrap:wrap;
-        /* justify-content: center; */  
-    }
-
-    .resume img {
-        order: 1;
-        width: 80%;    
-        height: 60%;
-        margin-left: 7vh;
-        margin-bottom: 7vh;
-        
+        flex-wrap:wrap;  
     }
 
     .thisisben-flex-container {
-        order: 2;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;    
+    }
+
+    .portrait {
+        order: 1;
         width: 100%;
-        margin: 0;
-        padding-left: 7vh;
-        
-        /* justify-content: center;    */
+        margin: 0 auto;
+        text-align: center;  
+    }
+
+    .description {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        order: 2;
+    }
+
+    .info {
+        width: 100%;
     }
 
     .lorem-flex-container {
@@ -131,5 +410,19 @@ h4 {
         margin: 0;
         padding-top: 7vh;
         justify-content: center;
+        flex-direction: column;
     }
-}
+
+    .whatpeoplesay {
+        width: 100%;
+    }
+
+    .what-container {
+        width: 100%;
+        padding-top: 7vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* flex-direction: column; */
+
+    }

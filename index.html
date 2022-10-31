@@ -4,50 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mon coding de Ben's Resume</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- NAVBAR -->
+    <section class="accueil">
+      <nav>
+        <h1>Ben Resume</h1>
+        <ul>
+          <li><a href="#">Introduction</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="yellowbutton"><button type="button">Download CV</button></span>
+      </nav>
+
+      <div class="message-accueil">
+        <div class="container1">
+          <img src="./img/ben.jpg" alt="photo de ben" />
+        </div>
+        
+        <div class="container2">
+          <div class="1st">
+            <h1 class="BDN">
+              <img class="hi"
+              src="https://img.icons8.com/emoji/48/000000/waving-hand-emoji.png"
+            /> Ben, a digital nomad </h1>
+          </div>
+          <div class="2nd">  <h1 class="CMAIL"> hello@company.co</h1> </div>
+        </div>
+        
+      </div>
+    </section>
 
     <!-- SECTION : RESUME -->
 
     <section class="resume">
       <!-- This is Ben's Resume -->
+      
+
       <div class="thisisben-flex-container">
-        <h1>This is Ben's Resume</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-          quasi! Eum quo veniam ipsum! Quod alias nihil ullam ipsa minus a eaque
-          esse amet veniam possimus voluptates quisquam mollitia velit, nemo rem
-          reprehenderit.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-          assumenda, similique nihil placeat inventore natus ullam, fugiat
-          doloremque repudiandae dolorum voluptates nam blanditiis.
-        </p>
+        
+        <div class="description">
+          <h1>This is Ben's Resume</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            quasi! Eum quo veniam ipsum! Quod alias nihil ullam ipsa minus a
+            eaque esse amet veniam possimus voluptates quisquam mollitia velit,
+            nemo rem reprehenderit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+            assumenda, similique nihil placeat inventore natus ullam, fugiat
+            doloremque repudiandae dolorum voluptates nam blanditiis.
+          </p>
 
-        <ul class="info">
+          <ul class="info">
             <li>
-                <h4>Full name: <span>Ben Mchicha</span></h4> 
+              <h4>Full name: <span>Ben Mchicha</span></h4>
             </li>
 
             <li>
-                <h4>Full name: <span>Ben Mchicha</span></h4> 
+              <h4>Full name: <span>Ben Mchicha</span></h4>
             </li>
             <li>
-                <h4>Full name: <span>Ben Mchicha</span></h4> 
+              <h4>Full name: <span>Ben Mchicha</span></h4>
             </li>
             <li>
-                <h4>Full name: <span>Ben Mchicha</span></h4> 
+              <h4>Full name: <span>Ben Mchicha</span></h4>
             </li>
-        </ul>
+          </ul>
+        </div>
 
+        <div class="portrait">
+          <img
+            src="./img/resume-photo.jpg"
+            alt="photo of ben working on laptop"
+          />
+        </div>
+
+        
       </div>
-
-      <!-- Resume Photo -->
-      <img src="./img/resume-photo.jpg" alt="photo of ben working on laptop"/>
-
 
       <!-- 3 lorems -->
       <div class="lorem-flex-container">
@@ -82,5 +124,138 @@
         </div>
       </div>
     </section>
+
+    <!-- what people say -->
+    <section class="whatpeoplesay">
+      <h1 class="what1">What <span>people</span> say</h1>
+
+      <div class="what-container">
+
+        <div class="people">
+          <img class="author" src="./img/what.jpeg" alt="photo auteur"/>
+          <div class="quote">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam
+              repudiandae consequatur?
+            </p>
+            <h2>Ben</h2>
+            <h3>Art Director</h3>  
+          </div>          
+        </div>
+
+      <div class="people">
+        <img class="author" src="./img/what.jpeg" alt="photo auteur"/>
+        <div class="quote">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam
+            repudiandae consequatur?
+          </p>
+          <h2>Ben</h2>
+          <h3>Art Director</h3>  
+        </div>          
+      </div>
+
+      <div class="people">
+        <img class="author" src="./img/what.jpeg" alt="photo auteur"/>
+        <div class="quote">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nam
+            repudiandae consequatur?
+          </p>
+          <h2>Ben</h2>
+          <h3>Art Director</h3>  
+        </div>          
+      </div>
+
+      </div>  
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-main">
+        <h1 class="title">FAQ</h1> 
+    
+      <section class="faq-container">
+       
+  
+        <div class="faq-body">
+  
+        <div class="aquestion">
+          <div class="Q">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+        <hr>
+        <div class="A">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          consectetur esse, totam a nobis consequatur.
+        </div>
+      </div>
+    </div>
+    <hr>
+  
+    <div class="aquestion">
+      <div class="Q">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+    <hr>
+    <div class="A">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+      consectetur esse, totam a nobis consequatur.
+    </div>
+  </div>
+  </div>
+  <hr>
+  
+  <div class="aquestion">
+    <div class="Q">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+  <hr>
+  <div class="A">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+    consectetur esse, totam a nobis consequatur.
+  </div>
+  </div>
+  </div>
+  <hr>
+  
+  <div class="aquestion">
+    <div class="Q">Lorem ipsum dolor sit amet consectetur adipisicing elit?</div>
+  <hr>
+  <div class="A">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+    consectetur esse, totam a nobis consequatur.
+  </div>
+  </div>
+  </div>
+      </section>
+  
+  <h1 class="faq-info">Please don't send a message if you have any question.
+    Here's our email anyway : contact (at) tooplate (dot) com </h1>
+  
+    </section>
+
+  <!-- CONTACT -->
+    <section class="contact">
+      <div class="formulaire">
+        <form>
+          <input type="text" id="fname" name="fname" placeholder="Full name"><br>
+          <input type="text" id="email" name="email" placeholder="Your email"><br>
+          <input type="text" id="message" name="email" placeholder="Message"><br>
+          <input class="send-button" type="submit" value="Send">
+        </form>
+      </div>
+
+      <div class="c-info">
+        <h1>Say hello</h1>
+        <h3>0100200340</h3>
+        <h3 class="mail-info">hello@company.co <i class='bx bx-right-top-arrow-circle' ></i></h3>
+        <div class="socials">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+          </div>
+        <h3>Copyright <span>&copy;</span> 2020 Ben Resume Page</h3>
+        <h3>Design: <span>Tooplate</span></h3>
+      </div>
+      
+    </section>
+
+
   </body>
 </html>
