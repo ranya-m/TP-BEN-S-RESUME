@@ -26,14 +26,16 @@ h4 {
 /* Acceuil : navbar */
 nav {
     background-color:rgb(5, 5, 41);
-    padding: 1% 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 nav h1 { 
     color: white;
     padding-left: 5%;
     padding-top: 2%;
-    font-size: 2.3em;
+    font-size: 2.2em;
 }
 
 nav h1, 
@@ -44,12 +46,13 @@ nav ul li {
 
 nav ul {
    width: 60%;
-   padding-left: 10%;
+   padding-left: 5%;
+   margin-top: 2.5%;
 
 }
 
 nav li {
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 nav a {
@@ -61,11 +64,12 @@ nav a {
 nav button {
     background-color: rgb(247, 213, 22);
     color:rgb(5, 5, 41);
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight:600;
     padding: 10px 30px;
     border-radius: 1.5em;
-    
+    margin-top: 10%;
+    margin-right: 2.5%;
 }
 
 /* Acceuil : Welcome message */
@@ -104,12 +108,9 @@ nav button {
     margin-top: 25px;
     background-color:rgb(247, 213, 22);
     color: rgb(2, 2, 14);
-    font-size: 2.3em;  
-    padding-left: 30px;
-    padding-top: 15px;
+    padding: 15px 5px 25px 50px;
     border-radius: 1.5em;
-    width: 60%;
-    font-weight: 500;
+    width: 70%;
 }
 
 
@@ -279,8 +280,7 @@ nav button {
     display: flex;
     flex-wrap:wrap; 
     justify-content: space-evenly;
-    
-    
+    height:90vh;   
 }
 
 .formulaire {
@@ -335,12 +335,50 @@ input[type=text] {
     padding-right: 400px;   
 }
 
+/* NAVBAR fa-bar */
 
+.nav-fa-bars {
+    font-size: 2rem;
+    display: none;
+  }
 
-
+  
 /* RESPONSIVE */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:900px) {
+      
+        nav {
+          display: none;
+        }
+
+        .accueil {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+      
+        .nav-fa-bars {
+            width: 100%;
+            display: inline-block;
+        }
+
+
+        .fa-bars {
+          display: inline-block;
+          font-size: 2rem;
+          color: white;  
+          position: absolute;
+          top: 5%;
+          right: 5%;
+        }
+
+        .nav-fa-bars>h1 {
+        font-size: 2rem;
+        padding-top: 5%;
+        padding-left: 5%;
+        }
+    
+
     .lorem {
         width: 100%;  
         margin:0;
@@ -368,6 +406,7 @@ input[type=text] {
         width: 100%;
         margin: 0 auto;
         text-align: center;  
+        padding-bottom: 5vh;
     }
 
     .description {
@@ -400,6 +439,56 @@ input[type=text] {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10vh;
+    }
+
+    .people {
+        flex-basis: 90%;
+    }
+
+    .people>img {
+        width: 30%;
+    }
+
+    .quote {
+        padding-top: 5vh;
+        padding-left: 5vh;
+    }
+
+    .message-accueil {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container1 {
+        width: 100%;
+        order: 1;
+    }
+
+    .container2 {
+        width: 100;
+        order: 2;
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+
+    .contact {
+        width: 100%;
+        justify-content: center;
+        gap: 30%;
+    }
+
+    .formulaire {
+        width: 80%;
+        order: 1;
+    }
+
+    .c-info {
+        width: 90%;
+        order: 2;
+        justify-items: center;
     }
 
 
