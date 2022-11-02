@@ -110,7 +110,7 @@ nav button {
     color: rgb(2, 2, 14);
     padding: 15px 5px 25px 50px;
     border-radius: 1.5em;
-    width: 70%;
+    /* width: 70%; */
 }
 
 
@@ -322,17 +322,18 @@ nav button {
     border: none;
 }
 
+
 input[type=text] {
+    box-sizing: content-box;
     border: none;
     border-bottom: 2px solid rgb(210, 208, 211) !important;
-    padding-right: 400px;   
     padding-bottom: 30px;
     font-size: 20px;
+    padding-right: 45%;
 }
 
 #message {
-    padding-bottom: 200px;
-    padding-right: 400px;   
+    padding-bottom: 200px;  
 }
 
 /* NAVBAR fa-bar */
@@ -380,7 +381,7 @@ input[type=text] {
     
 
     .lorem {
-        width: 100%;  
+        width: 95%;  
         margin:0;
         /* justify-items: center; */
         padding-left: 7vh;
@@ -467,17 +468,27 @@ input[type=text] {
         order: 1;
     }
 
+    .container1>img {
+        width: 70%;
+        justify-items: center;
+    }
+
     .container2 {
-        width: 100;
+        width: 90%;
         order: 2;
         margin-top: 0%;
         padding-top: 0%;
     }
 
+
     .contact {
         width: 100%;
         justify-content: center;
         gap: 30%;
+    }
+
+    .CMAIL {
+        width: 90%;
     }
 
     .formulaire {
